@@ -1,11 +1,86 @@
 # Net_Core_Angular_SQLServer_01
-Desarrollo frontend con Angular, backend NET Core, Entity Framework Core, SQL Server + Deploy en Azure
+Desarrollo frontend con Angular 11, Bootstrap 5.1.3, backend NET Core, Entity Framework Core, SQL Server + Deploy en Azure
 
 
 ## FrontEnd
 
+* **https://getbootstrap.com/**
+* **https://github.com/twbs/bootstrap**
+* **https://uigradients.com/#CrystalClear**
+* **https://codingpotions.com/angular-componentes-routing**
+
+```
+Angular 11
+Bootstrap 5.1.3
+
+npm install ngx-toastr@13.2.1 --save
+
+npm install bootstrap
+
+CSS:
+
+Import bootstrap.min.css in file styles.scss
+
+// Bootstrap
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+OR
+
+Add path in file angular.json
+
+"styles": [
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+          ],
+
+// PATH (Bootstrap): "node_modules/bootstrap/dist/css/bootstrap.min.css"
+
+JS:
+
+Add path in file angular.json
+
+"scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+           ]
+
+Or
+
+Bundle (*)
+
+Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both bootstrap.bundle.js and bootstrap.bundle.min.js include Popper for our tooltips and popovers. For more information about what’s included in Bootstrap, please see our contents section.
+
+"scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+           ]
+
+
+
+ANOTHER WAY:
+
+https://www.crehana.com/ec/blog/desarrollo-web/instalar-bootstrap-angular/
+
+https://www.crehana.com/ec/blog/desarrollo-web/instalar-bootstrap-angular/
+
+Luego, en el archivo “angular.json”, deberás poner las siguientes instrucciones en los objetos “styles” y “scripts”:
+
+    "styles": [
+    "node_modules/bootstrap/dist/css/bootstrap.min.css",
+    "src/styles.scss"
+    ],
+    "scripts": [
+    "node_modules/jquery/dist/jquery.min.js",
+    "node_modules/@popperjs/core/dist/umd/popper.min.js",
+    "node_modules/bootstrap/dist/js/bootstrap.min.js"
+    ]
+
 ```
 
+## Páginas y rutas Angular SPA (route:slug)
+
+* **https://academia-binaria.com/paginas-y-rutas-angular-spa/**
+
+```
+Bloc
 ```
 
 
