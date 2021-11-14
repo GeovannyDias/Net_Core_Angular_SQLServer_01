@@ -5,6 +5,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
+// Ctrl + R + G → Eliminar usings o bibliotecas que no se esten utilizando
+
 namespace server.Models
 {
     [Table("CreditCard")]
