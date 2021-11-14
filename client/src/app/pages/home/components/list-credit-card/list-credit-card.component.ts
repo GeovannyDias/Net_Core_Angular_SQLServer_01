@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output /*, ViewEncapsulation*/ } from '@angular/core';
 import { ToastrService } from 'ngx-toastr';
 import { Subscription } from 'rxjs';
 import { CreditCardI } from '../../models/card.interface';
@@ -7,6 +7,7 @@ import { CreditCardService } from '../../services/credit-card.service';
 @Component({
   selector: 'app-list-credit-card',
   templateUrl: './list-credit-card.component.html',
+  // encapsulation: ViewEncapsulation.None, // To use css class
   styleUrls: ['./list-credit-card.component.scss']
 })
 export class ListCreditCardComponent implements OnInit {
@@ -18,7 +19,12 @@ export class ListCreditCardComponent implements OnInit {
   constructor(
     private creditCardService: CreditCardService,
     private toastr: ToastrService,
-  ) { }
+  ) {
+    // Tamaño de pantalla
+    // if (screen.width < 600) {
+    //   // Code ..
+    // }
+  }
 
   ngOnInit(): void {
     this.getCreditCards();
